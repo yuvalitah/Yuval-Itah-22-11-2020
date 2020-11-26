@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import HeaderContainer from "./Containers/Header/HeaderContainer";
+import { Route, Switch } from "react-router-dom";
+import { tabs } from "./Consts/Tabs";
+import { ThemeProvider } from "@material-ui/core";
+import { createMuiTheme } from "@material-ui/core/styles";
+import { lightTheme, darkTheme } from "./Theme/Theme";
+import { SnackbarProvider } from "./Containers/SnackbarProvider/SnackbarProvider";
+import { connect } from "react-redux";
 
-function App() {
+const App = (props) => {
+  const { isLightTheme } = props;
+  const appliedTheme = createMuiTheme(isLightTheme ? lightTheme : darkTheme);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeProvider theme={appliedTheme}>
+        <SnackbarProvider>
+          <HeaderContainer />
+          <Switch>
+            {tabs.map((tab, index) => (
+              <Route
+                key={index}
+                path={tab.route}
+                component={tab.component}
+                exact={tab.exact}
+              />
+            ))}
+          </Switch>
+        </SnackbarProvider>
+      </ThemeProvider>
+    </>
   );
-}
+};
 
-export default App;
+const mapStateToProps = (state) => ({
+  isLightTheme: state.UI.isLightTheme,
+});
+
+export default connect(mapStateToProps)(App);
