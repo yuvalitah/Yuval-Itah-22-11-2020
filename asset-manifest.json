@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Yuval-Itah-22-11-2019/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/Yuval-Itah-22-11-2019/static/js/main.f0bca95f.chunk.js",
+    "main.js.map": "/Yuval-Itah-22-11-2019/static/js/main.f0bca95f.chunk.js.map",
+    "runtime-main.js": "/Yuval-Itah-22-11-2019/static/js/runtime-main.b136345f.js",
+    "runtime-main.js.map": "/Yuval-Itah-22-11-2019/static/js/runtime-main.b136345f.js.map",
+    "static/js/2.84c943b2.chunk.js": "/Yuval-Itah-22-11-2019/static/js/2.84c943b2.chunk.js",
+    "static/js/2.84c943b2.chunk.js.map": "/Yuval-Itah-22-11-2019/static/js/2.84c943b2.chunk.js.map",
+    "index.html": "/Yuval-Itah-22-11-2019/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/Yuval-Itah-22-11-2019/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.84c943b2.chunk.js.LICENSE.txt": "/Yuval-Itah-22-11-2019/static/js/2.84c943b2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b136345f.js",
+    "static/js/2.84c943b2.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.f0bca95f.chunk.js"
+  ]
+}
