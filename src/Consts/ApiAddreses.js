@@ -1,5 +1,5 @@
 export const BASE_API = "https://dataservice.accuweather.com";
-export const API_KEY = "?apikey=3B82dyM1sPx6s3kpSGJGxQyZY07gqLMu";
+export const API_KEY = "?apikey=yGLxAkgEq7gDovBdnKxLqLZJ1OdeNtEi";
 export const AUTOCOMPLETE_API = "/locations/v1/cities/autocomplete";
 export const DAILY_FORECAST_API = "/forecasts/v1/daily/5day";
 export const CURRENT_CONDITIONS_API = "/currentconditions/v1";

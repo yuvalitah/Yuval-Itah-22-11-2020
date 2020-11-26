@@ -31,10 +31,7 @@ const DailyWeatherCard = (props) => {
       <Card className={classes.cardContainer} key={index}>
         <CardContent className={classes.cardContent}>
           <Typography variant="h5">{weekDay[forecastDay]}</Typography>
-          <img
-            src={picturesEnum[forecast.Day.Icon]}
-            alt="daily forecast image"
-          />
+          <img src={picturesEnum[forecast.Day.Icon]} alt="daily forecast" />
           <Typography variant="subtitle1">
             {forecast.Temperature.Minimum.Value} -{" "}
             {forecast.Temperature.Maximum.Value}{" "}

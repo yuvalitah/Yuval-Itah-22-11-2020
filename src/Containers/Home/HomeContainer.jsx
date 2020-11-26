@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import debounce from "../../Debounce/Debounce";
-import * as MockApiResponses from "../../MockApiResponses/MockApiResponses";
 import Home from "../../Components/Home/Home";
 import { useSnackbar } from "../SnackbarProvider/SnackbarProvider";
 import {
@@ -46,8 +45,6 @@ const HomeContainer = (props) => {
         navigator.geolocation.getCurrentPosition(getCityData);
       }
     }
-
-    // setCityData(MockApiResponses.Autocomplete.data[0]);
   }, [searchInput]);
 
   useEffect(() => {
