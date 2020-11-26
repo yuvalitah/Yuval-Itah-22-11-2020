@@ -8,14 +8,14 @@ import {
 export const tabs = [
   {
     label: "Home",
-    route: "/Yuval-Itah-22-11-2019/",
+    route: "/Yuval-Itah-22-11-2020/",
     component: HomeContainer,
     icon: <HomeIcon />,
     exact: true,
   },
   {
     label: "Favorites",
-    route: "/Yuval-Itah-22-11-2019/favorites",
+    route: "/Yuval-Itah-22-11-2020/favorites",
     component: FavoriteCardContainer,
     icon: <FavoritesIcon />,
     exact: false,
