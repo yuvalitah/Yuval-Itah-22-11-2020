@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent, Typography, makeStyles } from "@material-ui/core";
-import { Cloud, WbSunny } from "@material-ui/icons";
 import { connect } from "react-redux";
+import { picturesEnum } from "../../Consts/PicturesEnum";
 
 const useStyles = makeStyles({
   cardContainer: {
@@ -31,11 +31,10 @@ const DailyWeatherCard = (props) => {
       <Card className={classes.cardContainer} key={index}>
         <CardContent className={classes.cardContent}>
           <Typography variant="h5">{weekDay[forecastDay]}</Typography>
-          {forecast.Temperature.Minimum.Value < 16 ? (
-            <Cloud size="large" />
-          ) : (
-            <WbSunny size="large" />
-          )}
+          <img
+            src={picturesEnum[forecast.Day.Icon]}
+            alt="daily forecast image"
+          />
           <Typography variant="subtitle1">
             {forecast.Temperature.Minimum.Value} -{" "}
             {forecast.Temperature.Maximum.Value}{" "}

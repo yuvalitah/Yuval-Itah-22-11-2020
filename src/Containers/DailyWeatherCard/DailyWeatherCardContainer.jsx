@@ -11,11 +11,11 @@ const DailyWeatherCardContainer = (props) => {
   const { id, isCelsius } = props;
 
   useEffect(() => {
-    getDailyForecasts(id, isCelsius)
-      .then((response) => setDailyForecasts(response.data.DailyForecasts))
-      .catch((error) => openSnackbar(error.message, "error"));
+    // getDailyForecasts(id, isCelsius)
+    //   .then((response) => setDailyForecasts(response.data.DailyForecasts))
+    //   .catch((error) => openSnackbar(error.message, "error"));
 
-    // setDailyForecasts(MockApiResponses.DailyForecasts.data.DailyForecasts);
+    setDailyForecasts(MockApiResponses.DailyForecasts.data.DailyForecasts);
   }, [id, isCelsius]);
 
   return dailyForecasts ? (

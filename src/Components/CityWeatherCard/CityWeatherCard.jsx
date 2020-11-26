@@ -8,16 +8,12 @@ import {
   Typography,
   Box,
 } from "@material-ui/core";
-import {
-  Cloud,
-  Favorite,
-  LocationOn,
-  FavoriteBorder,
-} from "@material-ui/icons";
+import { Favorite, LocationOn, FavoriteBorder } from "@material-ui/icons";
 import { grey } from "@material-ui/core/colors";
 import DailyWeatherCardContainer from "../../Containers/DailyWeatherCard/DailyWeatherCardContainer";
 import { connect } from "react-redux";
 import * as ActionCreators from "../../Actions/ActionCreators";
+import { picturesEnum } from "../../Consts/PicturesEnum";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -50,6 +46,7 @@ const CityWeatherCard = (props) => {
     addFavoriteCity,
     isCelsius,
     favorites,
+    weatherIcon,
   } = props;
   const { celsius, farenheit } = props.degrees;
 
@@ -97,7 +94,9 @@ const CityWeatherCard = (props) => {
         <Typography variant="h3">
           {isCelsius ? celsius + "\u00b0C" : farenheit + "\u00b0F"}
         </Typography>
-        <Cloud size="large" />
+        {weatherIcon < 33 ? (
+          <img src={picturesEnum[weatherIcon]} alt="City Weather Icon" />
+        ) : null}
         <Typography variant="h4">{weatherText}</Typography>
         <Box
           display="flex"
