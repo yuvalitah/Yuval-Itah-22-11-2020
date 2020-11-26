@@ -15,39 +15,39 @@ const HomeContainer = (props) => {
   const { location } = props;
 
   useEffect(() => {
-    // if (searchInput) {
-    //   const getCityDataDebounce = debounce(async () => {
-    //     getCityDataByName(searchInput)
-    //       .then((response) => {
-    //         if (response.data.length) {
-    //           setCityData(response.data[0]);
-    //         } else {
-    //           openSnackbar(
-    //             "Oops! We couldn't find any cities that match your search.",
-    //             "warning"
-    //           );
-    //         }
-    //       })
-    //       .catch((error) => openSnackbar(error.message, "error"));
-    //   }, 1000);
+    if (searchInput) {
+      const getCityDataDebounce = debounce(async () => {
+        getCityDataByName(searchInput)
+          .then((response) => {
+            if (response.data.length) {
+              setCityData(response.data[0]);
+            } else {
+              openSnackbar(
+                "Oops! We couldn't find any cities that match your search.",
+                "warning"
+              );
+            }
+          })
+          .catch((error) => openSnackbar(error.message, "error"));
+      }, 1000);
 
-    //   getCityDataDebounce();
-    // } else {
-    //   const getCityData = (position) => {
-    //     getCityDataByGeoposition(
-    //       position.coords.latitude,
-    //       position.coords.longitude
-    //     )
-    //       .then((response) => setCityData(response.data))
-    //       .catch((error) => openSnackbar(error.message, "error"));
-    //   };
+      getCityDataDebounce();
+    } else {
+      const getCityData = (position) => {
+        getCityDataByGeoposition(
+          position.coords.latitude,
+          position.coords.longitude
+        )
+          .then((response) => setCityData(response.data))
+          .catch((error) => openSnackbar(error.message, "error"));
+      };
 
-    //   if (navigator.geolocation) {
-    //     navigator.geolocation.getCurrentPosition(getCityData);
-    //   }
-    // }
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(getCityData);
+      }
+    }
 
-    setCityData(MockApiResponses.Autocomplete.data[0]);
+    // setCityData(MockApiResponses.Autocomplete.data[0]);
   }, [searchInput]);
 
   useEffect(() => {

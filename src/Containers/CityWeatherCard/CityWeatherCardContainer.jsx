@@ -10,11 +10,11 @@ const CityWeatherCardContainer = (props) => {
   const { id, name } = props;
 
   useEffect(() => {
-    // getCurrentWeatherData(id)
-    //   .then((response) => setCurrentWeatherData(response.data[0]))
-    //   .catch((error) => openSnackbar(error.message, "error"));
+    getCurrentWeatherData(id)
+      .then((response) => setCurrentWeatherData(response.data[0]))
+      .catch((error) => openSnackbar(error.message, "error"));
 
-    setCurrentWeatherData(MockApiResponses.CurrentConditions.data);
+    // setCurrentWeatherData(MockApiResponses.CurrentConditions.data);
   }, [id]);
 
   return currentWeatherData ? (
