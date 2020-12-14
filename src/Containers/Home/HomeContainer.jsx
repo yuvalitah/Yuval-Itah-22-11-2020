@@ -6,6 +6,7 @@ import {
   getCityDataByName,
   getCityDataByGeoposition,
 } from "../../Api/ApiRequests";
+import { LocationOnTwoTone } from "@material-ui/icons";
 
 const HomeContainer = (props) => {
   const [searchInput, setSearchInput] = useState("");
@@ -33,6 +34,10 @@ const HomeContainer = (props) => {
   useEffect(() => {
     if (searchInput) {
       getCityDataDebouncedCallback(searchInput);
+    } else if (location.search) {
+      const urlParams = new URLSearchParams(location.search);
+      const cityName = urlParams.get("cityName");
+      setSearchInput(cityName || "");
     } else {
       const getCityData = (position) => {
         getCityDataByGeoposition(
@@ -47,13 +52,13 @@ const HomeContainer = (props) => {
         navigator.geolocation.getCurrentPosition(getCityData);
       }
     }
-  }, [searchInput]);
+  }, [searchInput, location.search]);
 
-  useEffect(() => {
-    const urlParams = new URLSearchParams(location.search);
-    const cityName = urlParams.get("cityName");
-    setSearchInput(cityName || "");
-  }, [location.search]);
+  // useEffect(() => {
+  //   const urlParams = new URLSearchParams(location.search);
+  //   const cityName = urlParams.get("cityName");
+  //   setSearchInput(cityName || "");
+  // }, []);
 
   const handleSearchInput = (event) => {
     setSearchInput(event.target.value);
