@@ -1,14 +1,9 @@
 const debounce = (func, wait) => {
   let timeout;
-
-  return function executedFunc(...args) {
-    const later = () => {
-      clearTimeout(timeout);
-      func(...args);
-    };
-
+  return function (...args) {
+    const context = this;
     clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
+    timeout = setTimeout(() => func.apply(context, args), wait);
   };
 };
 

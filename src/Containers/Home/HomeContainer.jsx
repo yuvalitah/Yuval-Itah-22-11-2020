@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import debounce from "../../Debounce/Debounce";
 import Home from "../../Components/Home/Home";
 import { useSnackbar } from "../SnackbarProvider/SnackbarProvider";
@@ -12,25 +12,27 @@ const HomeContainer = (props) => {
   const [cityData, setCityData] = useState(null);
   const { openSnackbar } = useSnackbar();
   const { location } = props;
+  const getCityDataDebouncedCallback = useCallback(
+    debounce(async (searchInput) => {
+      await getCityDataByName(searchInput)
+        .then((response) => {
+          if (response.data.length) {
+            setCityData(response.data[0]);
+          } else {
+            openSnackbar(
+              "Oops! We couldn't find any cities that match your search.",
+              "warning"
+            );
+          }
+        })
+        .catch((error) => openSnackbar(error.message, "error"));
+    }, 3000),
+    []
+  );
 
   useEffect(() => {
     if (searchInput) {
-      const getCityDataDebounce = debounce(async () => {
-        getCityDataByName(searchInput)
-          .then((response) => {
-            if (response.data.length) {
-              setCityData(response.data[0]);
-            } else {
-              openSnackbar(
-                "Oops! We couldn't find any cities that match your search.",
-                "warning"
-              );
-            }
-          })
-          .catch((error) => openSnackbar(error.message, "error"));
-      }, 1000);
-
-      getCityDataDebounce();
+      getCityDataDebouncedCallback(searchInput);
     } else {
       const getCityData = (position) => {
         getCityDataByGeoposition(
