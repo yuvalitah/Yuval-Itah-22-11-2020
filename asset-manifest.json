@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Yuval-Itah-22-11-2020/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/Yuval-Itah-22-11-2020/static/js/main.75cc67d3.chunk.js",
-    "main.js.map": "/Yuval-Itah-22-11-2020/static/js/main.75cc67d3.chunk.js.map",
+    "main.css": "/Yuval-Itah-22-11-2020/static/css/main.2ae47eeb.chunk.css",
+    "main.js": "/Yuval-Itah-22-11-2020/static/js/main.0e041ceb.chunk.js",
+    "main.js.map": "/Yuval-Itah-22-11-2020/static/js/main.0e041ceb.chunk.js.map",
     "runtime-main.js": "/Yuval-Itah-22-11-2020/static/js/runtime-main.2298d324.js",
     "runtime-main.js.map": "/Yuval-Itah-22-11-2020/static/js/runtime-main.2298d324.js.map",
     "static/js/2.2d9740fc.chunk.js": "/Yuval-Itah-22-11-2020/static/js/2.2d9740fc.chunk.js",
     "static/js/2.2d9740fc.chunk.js.map": "/Yuval-Itah-22-11-2020/static/js/2.2d9740fc.chunk.js.map",
     "index.html": "/Yuval-Itah-22-11-2020/index.html",
-    "static/css/main.6dea0f05.chunk.css.map": "/Yuval-Itah-22-11-2020/static/css/main.6dea0f05.chunk.css.map",
+    "static/css/main.2ae47eeb.chunk.css.map": "/Yuval-Itah-22-11-2020/static/css/main.2ae47eeb.chunk.css.map",
     "static/js/2.2d9740fc.chunk.js.LICENSE.txt": "/Yuval-Itah-22-11-2020/static/js/2.2d9740fc.chunk.js.LICENSE.txt",
     "static/media/MostlyCloudyTStorms.02f6796a.png": "/Yuval-Itah-22-11-2020/static/media/MostlyCloudyTStorms.02f6796a.png",
     "static/media/PartlySunnyTStorms.4b8d4543.png": "/Yuval-Itah-22-11-2020/static/media/PartlySunnyTStorms.4b8d4543.png",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.2298d324.js",
     "static/js/2.2d9740fc.chunk.js",
-    "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.75cc67d3.chunk.js"
+    "static/css/main.2ae47eeb.chunk.css",
+    "static/js/main.0e041ceb.chunk.js"
   ]
 }
