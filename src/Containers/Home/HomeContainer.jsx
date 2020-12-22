@@ -6,7 +6,6 @@ import {
   getCityDataByName,
   getCityDataByGeoposition,
 } from "../../Api/ApiRequests";
-import { LocationOnTwoTone } from "@material-ui/icons";
 
 const HomeContainer = (props) => {
   const [searchInput, setSearchInput] = useState("");
@@ -27,7 +26,7 @@ const HomeContainer = (props) => {
           }
         })
         .catch((error) => openSnackbar(error.message, "error"));
-    }, 3000),
+    }, 2000),
     []
   );
 
@@ -53,12 +52,6 @@ const HomeContainer = (props) => {
       }
     }
   }, [searchInput, location.search]);
-
-  // useEffect(() => {
-  //   const urlParams = new URLSearchParams(location.search);
-  //   const cityName = urlParams.get("cityName");
-  //   setSearchInput(cityName || "");
-  // }, []);
 
   const handleSearchInput = (event) => {
     setSearchInput(event.target.value);
