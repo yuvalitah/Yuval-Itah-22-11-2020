@@ -18,9 +18,6 @@ import { connect } from "react-redux";
 import * as ActionCreators from "../../Actions/ActionCreators";
 
 const useStyles = makeStyles({
-  appBar: {
-    height: "10%",
-  },
   toolbarTitle: {
     fontWeight: "bold",
   },
@@ -38,7 +35,7 @@ const Header = (props) => {
   } = props;
 
   return (
-    <AppBar position="static" className={classes.appBar}>
+    <AppBar position="static">
       <Toolbar>
         <Box
           display="flex"

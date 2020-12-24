@@ -43,8 +43,8 @@ const Home = (props) => {
         <Search fontSize="default" color="primary" />
         <InputBase
           placeholder="Type here a city name"
-          value={searchInput.replace(/[^A-Za-z]/gi, "")}
           onChange={(event) => handleSearchInput(event)}
+          value={searchInput.replace(/[^A-Za-z\s]/gi, "")}
           className={classes.searchInput}
         />
       </Box>

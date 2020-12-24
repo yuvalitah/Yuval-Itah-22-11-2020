@@ -13,6 +13,7 @@ import { connect } from "react-redux";
 const useStyles = makeStyles({
   card: {
     marginTop: "2%",
+    width: "22%",
   },
 });
 const FavoriteCard = (props) => {

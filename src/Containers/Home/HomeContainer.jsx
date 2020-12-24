@@ -12,6 +12,7 @@ const HomeContainer = (props) => {
   const [cityData, setCityData] = useState(null);
   const { openSnackbar } = useSnackbar();
   const { location } = props;
+
   const getCityDataDebouncedCallback = useCallback(
     debounce(async (searchInput) => {
       await getCityDataByName(searchInput)
@@ -55,6 +56,7 @@ const HomeContainer = (props) => {
 
   const handleSearchInput = (event) => {
     setSearchInput(event.target.value);
+    location.search = event.target.value;
   };
 
   return (

@@ -8,7 +8,7 @@ import {
 export const tabs = [
   {
     label: "Home",
-    route: "/Yuval-Itah-22-11-2020/",
+    route: "/Yuval-Itah-22-11-2020",
     component: HomeContainer,
     icon: <HomeIcon />,
     exact: true,
