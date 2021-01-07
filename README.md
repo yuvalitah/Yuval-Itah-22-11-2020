@@ -26,7 +26,7 @@ Weather Application to view the weather of specific locations.
 Use the package manager [npm](https://www.npmjs.com/) to install Weather-App.
 
 ```npm
-git clone "https://github.com/yuvalitah/Yuval-Itah-22-11-2020.git"
+git clone "https://github.com/yuvalitah/Weather-App.git"
 cd ../path/to/the/file
 npm install
 ```
