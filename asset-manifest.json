@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Yuval-Itah-22-11-2020/static/css/main.2ae47eeb.chunk.css",
-    "main.js": "/Yuval-Itah-22-11-2020/static/js/main.74619d73.chunk.js",
-    "main.js.map": "/Yuval-Itah-22-11-2020/static/js/main.74619d73.chunk.js.map",
-    "runtime-main.js": "/Yuval-Itah-22-11-2020/static/js/runtime-main.2298d324.js",
-    "runtime-main.js.map": "/Yuval-Itah-22-11-2020/static/js/runtime-main.2298d324.js.map",
-    "static/js/2.59f169fd.chunk.js": "/Yuval-Itah-22-11-2020/static/js/2.59f169fd.chunk.js",
-    "static/js/2.59f169fd.chunk.js.map": "/Yuval-Itah-22-11-2020/static/js/2.59f169fd.chunk.js.map",
-    "index.html": "/Yuval-Itah-22-11-2020/index.html",
-    "static/css/main.2ae47eeb.chunk.css.map": "/Yuval-Itah-22-11-2020/static/css/main.2ae47eeb.chunk.css.map",
-    "static/js/2.59f169fd.chunk.js.LICENSE.txt": "/Yuval-Itah-22-11-2020/static/js/2.59f169fd.chunk.js.LICENSE.txt",
-    "static/media/MostlyCloudyTStorms.02f6796a.png": "/Yuval-Itah-22-11-2020/static/media/MostlyCloudyTStorms.02f6796a.png",
-    "static/media/PartlySunnyTStorms.4b8d4543.png": "/Yuval-Itah-22-11-2020/static/media/PartlySunnyTStorms.4b8d4543.png",
-    "static/media/TStorms.9aac7942.png": "/Yuval-Itah-22-11-2020/static/media/TStorms.9aac7942.png"
+    "main.css": "/Weather-App/static/css/main.2ae47eeb.chunk.css",
+    "main.js": "/Weather-App/static/js/main.d81e559f.chunk.js",
+    "main.js.map": "/Weather-App/static/js/main.d81e559f.chunk.js.map",
+    "runtime-main.js": "/Weather-App/static/js/runtime-main.816f7451.js",
+    "runtime-main.js.map": "/Weather-App/static/js/runtime-main.816f7451.js.map",
+    "static/js/2.2d9740fc.chunk.js": "/Weather-App/static/js/2.2d9740fc.chunk.js",
+    "static/js/2.2d9740fc.chunk.js.map": "/Weather-App/static/js/2.2d9740fc.chunk.js.map",
+    "index.html": "/Weather-App/index.html",
+    "static/css/main.2ae47eeb.chunk.css.map": "/Weather-App/static/css/main.2ae47eeb.chunk.css.map",
+    "static/js/2.2d9740fc.chunk.js.LICENSE.txt": "/Weather-App/static/js/2.2d9740fc.chunk.js.LICENSE.txt",
+    "static/media/MostlyCloudyTStorms.02f6796a.png": "/Weather-App/static/media/MostlyCloudyTStorms.02f6796a.png",
+    "static/media/PartlySunnyTStorms.4b8d4543.png": "/Weather-App/static/media/PartlySunnyTStorms.4b8d4543.png",
+    "static/media/TStorms.9aac7942.png": "/Weather-App/static/media/TStorms.9aac7942.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2298d324.js",
-    "static/js/2.59f169fd.chunk.js",
+    "static/js/runtime-main.816f7451.js",
+    "static/js/2.2d9740fc.chunk.js",
     "static/css/main.2ae47eeb.chunk.css",
-    "static/js/main.74619d73.chunk.js"
+    "static/js/main.d81e559f.chunk.js"
   ]
 }
